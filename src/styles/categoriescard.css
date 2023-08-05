@@ -1,0 +1,40 @@
+.categories-card {
+    flex: 0 0 calc(50% - 20px);
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    border: 4px solid white;
+    animation: neon-border 1s infinite;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.categories-card .card-image {
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    margin-right: 1rem;
+}
+
+.categories-card .card-content {
+    text-align: left;
+}
+
+.categories-card .card-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.categories-card .card-description {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+    .categories-card {
+        flex-basis: calc(100% - 20px);
+    }
+}
